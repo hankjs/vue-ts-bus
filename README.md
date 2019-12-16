@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zjhcn/vue-ts-bus/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/zjhcn/vue-ts-bus.svg?branch=master)](https://travis-ci.org/zjhcn/vue-ts-bus)
 [![Coveralls](https://img.shields.io/coveralls/zjhcn/vue-ts-bus.svg)](https://coveralls.io/github/zjhcn/vue-ts-bus)
-[![npm](https://img.shields.io/badge/npm-1.0.1-orange.svg)](https://www.npmjs.com/package/vue-ts-bus)
+[![npm](https://img.shields.io/badge/npm-1.0.2-orange.svg)](https://www.npmjs.com/package/vue-ts-bus)
 [![NPM downloads](http://img.shields.io/npm/dm/vue-ts-bus.svg?style=flat-square)](http://www.npmtrends.com/vue-ts-bus)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/zjhcn/vue-ts-bus.svg)](http://isitmaintained.com/project/zjhcn/vue-ts-bus "Percentage of issues still open")
 
