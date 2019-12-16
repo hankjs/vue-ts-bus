@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "test": "npm run lint && nyc mocha",
-    "release": "npm test && npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags",
+    "release": "npm test && npm run build && git commit -am 1.0.2 && git tag 1.0.2 && git push && git push --tags",
     "lint": "eslint -c .eslintrc src/**/*.ts",
     "lint:fix": "eslint -c .eslintrc src/**/*.ts --fix",
     "build:self": "rollup -c config/rollup.config.js",
