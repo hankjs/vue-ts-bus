@@ -1,0 +1,11 @@
+{
+    "name": "vue-event-bus",
+    "npmname": "vue-event-bus",
+    "umdname": "vue-event-bus",
+    "username": "zjhcn",
+    "type": "ts",
+    "module": "umd,esm,commonjs",
+    "test": "mocha",
+    "lang": "zh",
+    "version": "1.5.1"
+}
