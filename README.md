@@ -1,11 +1,11 @@
-# [vue-event-bus](https://github.com/zjhcn/vue-event-bus)
+# [vue-ts-bus](https://github.com/zjhcn/vue-ts-bus)
 [![](https://img.shields.io/badge/Powered%20by-jslib%20base-brightgreen.svg)](https://github.com/yanhaijing/jslib-base)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zjhcn/vue-event-bus/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/zjhcn/vue-event-bus.svg?branch=master)](https://travis-ci.org/zjhcn/vue-event-bus)
-[![Coveralls](https://img.shields.io/coveralls/zjhcn/vue-event-bus.svg)](https://coveralls.io/github/zjhcn/vue-event-bus)
-[![npm](https://img.shields.io/badge/npm-0.1.0-orange.svg)](https://www.npmjs.com/package/vue-event-bus)
-[![NPM downloads](http://img.shields.io/npm/dm/vue-event-bus.svg?style=flat-square)](http://www.npmtrends.com/vue-event-bus)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/zjhcn/vue-event-bus.svg)](http://isitmaintained.com/project/zjhcn/vue-event-bus "Percentage of issues still open")
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zjhcn/vue-ts-bus/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/zjhcn/vue-ts-bus.svg?branch=master)](https://travis-ci.org/zjhcn/vue-ts-bus)
+[![Coveralls](https://img.shields.io/coveralls/zjhcn/vue-ts-bus.svg)](https://coveralls.io/github/zjhcn/vue-ts-bus)
+[![npm](https://img.shields.io/badge/npm-1.0.1-orange.svg)](https://www.npmjs.com/package/vue-ts-bus)
+[![NPM downloads](http://img.shields.io/npm/dm/vue-ts-bus.svg?style=flat-square)](http://www.npmtrends.com/vue-ts-bus)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/zjhcn/vue-ts-bus.svg)](http://isitmaintained.com/project/zjhcn/vue-ts-bus "Percentage of issues still open")
 
 最好用的 `JS|TS` 第三方库脚手架
 
@@ -44,25 +44,25 @@
 通过npm下载安装代码
 
 ```bash
-$ npm install --save vue-event-bus
+$ npm install --save vue-ts-bus
 ```
 
 如果你是node环境
 
 ```js
-var base = require('vue-event-bus');
+var base = require('vue-ts-bus');
 ```
 
 如果你是webpack等环境
 
 ```js
-import base from 'vue-event-bus';
+import base from 'vue-ts-bus';
 ```
 
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/vue-event-bus/dist/index.aio.js'], function (base) {
+requirejs(['node_modules/vue-ts-bus/dist/index.aio.js'], function (base) {
     // xxx
 })
 ```
@@ -70,7 +70,7 @@ requirejs(['node_modules/vue-event-bus/dist/index.aio.js'], function (base) {
 如果你是浏览器环境
 
 ```html
-<script src="node_modules/vue-event-bus/dist/index.aio.js"></script>
+<script src="node_modules/vue-ts-bus/dist/index.aio.js"></script>
 ```
 
 ## :bookmark_tabs: 文档
@@ -111,7 +111,7 @@ $ npm publish
 
 ## 贡献者列表
 
-[contributors](https://github.com/zjhcn/vue-event-bus/graphs/contributors)
+[contributors](https://github.com/zjhcn/vue-ts-bus/graphs/contributors)
 
 ## :gear: 更新日志
 [CHANGELOG.md](./CHANGELOG.md)

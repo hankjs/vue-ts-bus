@@ -1,7 +1,13 @@
 {
-  "name": "vue-event-bus",
-  "version": "1.0.0",
-  "description": "vue-event-bus",
+  "name": "vue-ts-bus",
+  "version": "1.0.1",
+  "description": "vue eventBus vue-bus vue-ts-bus",
+  "keywords": [
+    "vue-bus",
+    "vue-event-bus",
+    "vue-ts-bus",
+    "typescript"
+  ],
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
@@ -23,10 +29,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zjhcn/vue-event-bus.git"
+    "url": "git://github.com/zjhcn/vue-ts-bus.git"
   },
   "bugs": {
-    "url": "https://github.com/zjhcn/vue-event-bus/issues"
+    "url": "https://github.com/zjhcn/vue-ts-bus/issues"
   },
   "files": [
     "/dist",

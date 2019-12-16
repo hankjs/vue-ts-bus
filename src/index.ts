@@ -134,7 +134,7 @@ class Bus {
 export default {
   install(Vue: Vue.VueConstructor, options: { name?: string } = {}): void {
     const bus = new Bus(Vue)
-    const finalName = !options.name ? '$eventBus' : options.name
+    const finalName = !options.name ? '$bus' : options.name
 
     Object.defineProperties(Vue.prototype, {
       [finalName]: {

@@ -1,4 +1,4 @@
-# VueEventBus
+# VueBus
 
 这是一个 Vue 的插件，基于 Vue 实现的事件发布订阅中心
 
@@ -49,19 +49,19 @@
 ### 初始化
 
 ```js
-import VueEventBus from 'vue-event-bus'
+import VueBus from 'vue-ts-bus'
 
 // 1. 默认选项
 // {
-//   name: '$eventBus'
+//   name: '$bus'
 // }
-Vue.use(VueEventBus)
+Vue.use(VueBus)
 // 在组件内使用
-this.$eventBus.on('eventName', callback, this)
+this.$bus.on('eventName', callback, this)
 
 
 // 2. 自定义挂载到实例上的对象名
-Vue.use(VueEventBus, { name: 'bus' })
+Vue.use(VueBus, { name: 'bus' })
 // 在组件内使用
 this.bus.on('eventName', callback, this)
 ```
@@ -74,19 +74,19 @@ this.bus.on('eventName', callback, this)
 // 代码
 // 全局注册
 const vm = new Vue(...)
-vm.$eventBus.on('globalEventName', (...args) => console.log(args))
+vm.$bus.on('globalEventName', (...args) => console.log(args))
 
 // 通过vue实例使用
-vm.$eventBus.emit('globalEventName', 1,2,3) // [1,2,3]
+vm.$bus.emit('globalEventName', 1,2,3) // [1,2,3]
 
 // 组件内使用
 // start: A Component
 created() {
-  this.$eventBus.emit('globalEventName', 1, 2) // [1,2]
+  this.$bus.emit('globalEventName', 1, 2) // [1,2]
 },
 methods: {
   handleClick() {
-    this.$eventBus.emit('globalEventName', 1) // [1]
+    this.$bus.emit('globalEventName', 1) // [1]
   }
 },
 // end: A Component
@@ -100,11 +100,11 @@ methods: {
 // start: A Component
 created() {
   // 注册事件
-  this.$eventBus.on('eventName', (...args) => console.log(args), this)
+  this.$bus.on('eventName', (...args) => console.log(args), this)
 },
 methods: {
   handleClick() {
-    this.$eventBus.emit('eventName', 1) // [1]
+    this.$bus.emit('eventName', 1) // [1]
   }
 },
 // end: A Component
@@ -112,11 +112,11 @@ methods: {
 // 在其他组件内触发事件
 // start: B Component
 created() {
-  this.$eventBus.emit('eventName', 1, 2) // [1,2]
+  this.$bus.emit('eventName', 1, 2) // [1,2]
 },
 methods: {
   handleClick() {
-    this.$eventBus.emit('eventName', 1, 2, 3) // [1,2,3]
+    this.$bus.emit('eventName', 1, 2, 3) // [1,2,3]
   }
 },
 // end: B Component

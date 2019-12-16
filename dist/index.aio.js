@@ -1,5 +1,5 @@
 /*!
- * vue-event-bus 1.0.0 (https://github.com/zjhcn/vue-event-bus)
+ * vue-ts-bus 1.0.0 (https://github.com/zjhcn/vue-event-bus)
  * API https://github.com/zjhcn/vue-event-bus/blob/master/doc/api.md
  * Copyright 2017-2019 zjhcn. All Rights Reserved
  * Licensed under MIT (https://github.com/zjhcn/vue-event-bus/blob/master/LICENSE)
@@ -128,7 +128,7 @@
           if (options === void 0) { options = {}; }
           var _a;
           var bus = new Bus(Vue);
-          var finalName = !options.name ? '$eventBus' : options.name;
+          var finalName = !options.name ? '$bus' : options.name;
           Object.defineProperties(Vue.prototype, (_a = {}, _a[finalName] = {
                   get: function () {
                       return bus;
