@@ -15,16 +15,14 @@
 - 多环境支持（支持浏览器原生，支持AMD，CMD，支持Webpack，Rollup，fis等，支持Node）
 - 集成[jsmini](https://github.com/jsmini)
 
-> 注意: 如果不同时使用 `export` 与 `export default` 可打开 `legacy模式`，`legacy模式` 下的模块系统可以兼容 `ie6-8`，见rollup配置文件
-
 ## :pill: 兼容性
 单元测试保证支持如下环境：
 
 | IE   | CH   | FF   | SF   | OP   | IOS  | Android   | Node  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
-| 6+   | 29+ | 55+  | 9+   | 50+  | 9+   | 4+   | 4+ |
+| 9+   | 29+ | 55+  | 9+   | 50+  | 9+   | 4+   | 4+ |
 
-**注意：编译代码依赖ES5环境，对于ie6-8需要引入[es5-shim](http://github.com/es-shims/es5-shim/)才可以兼容，可以查看[demo/demo-global.html](./demo/demo-global.html)中的例子**
+**注意：编译代码依赖ES5环境**
 
 ## :open_file_folder: 目录介绍
 
