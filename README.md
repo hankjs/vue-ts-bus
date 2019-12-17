@@ -72,7 +72,7 @@ requirejs(['node_modules/vue-ts-bus/dist/index.aio.js'], function (base) {
 ```
 
 ## :bookmark_tabs: 文档
-[API](./doc/api.md)
+[API文档](./doc/api.md)
 
 ## :kissing_heart: 贡献者指南
 首次运行需要先安装依赖
