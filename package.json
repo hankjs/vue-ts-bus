@@ -64,7 +64,8 @@
     "ts-node": "7.0.1",
     "tslib": "1.9.3",
     "typescript": "3.3.3333",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "diff": ">=3.5.0"
   },
   "dependencies": {}
 }
