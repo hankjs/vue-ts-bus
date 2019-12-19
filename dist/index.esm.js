@@ -1,5 +1,5 @@
 /*!
- * vue-ts-bus 1.0.3 (https://github.com/zjhcn/vue-event-bus)
+ * vue-ts-bus 1.0.4 (https://github.com/zjhcn/vue-event-bus)
  * API https://github.com/zjhcn/vue-event-bus/blob/master/doc/api.md
  * Copyright 2017-2019 zjhcn. All Rights Reserved
  * Licensed under MIT (https://github.com/zjhcn/vue-event-bus/blob/master/LICENSE)

@@ -9,39 +9,39 @@
 ### on
 
 > 注册事件
-> 
+>
 > `on(eventName: string, callback: function, vueComponent?: vueComponent): void`
 
-| Parameter	| Description |
-| --- | --- |
-| eventName: string | 注册的事件名 |
-| callback: string | 回调事件 参数由 `emit`方法传入 |
-| vueComponent?: vueComponent | 组件实例 |
+| Parameter                   | Description                    |
+| --------------------------- | ------------------------------ |
+| eventName: string           | 注册的事件名                   |
+| callback: string            | 回调事件 参数由 `emit`方法传入 |
+| vueComponent?: vueComponent | 组件实例                       |
 
 ### emit
 
 > 触发事件
-> 
+>
 > `emit(eventName: string, ...args: any[]): void`
 
-| Parameter	| Description |
-| --- | --- |
-| eventName: string | 触发的事件名 |
-| args: any[] | `on`方法 回调函数 接受的参数 不定项 |
+| Parameter         | Description                         |
+| ----------------- | ----------------------------------- |
+| eventName: string | 触发的事件名                        |
+| args: any[]       | `on`方法 回调函数 接受的参数 不定项 |
 
 ### off
 
 > 注销事件
-> 
+>
 > `off(eventName: string, callback?: function): boolean`
 
-| Parameter	| Description |
-| --- | --- |
-| eventName: string | 触发的事件名 |
+| Parameter           | Description          |
+| ------------------- | -------------------- |
+| eventName: string   | 触发的事件名         |
 | callback?: function | 只注销指定的回调函数 |
 
-| Returns	| Description |
-| --- | --- |
+| Returns | Description           |
+| ------- | --------------------- |
 | boolean | 是否注销成功 作用不到 |
 
 ## 使用
@@ -58,7 +58,6 @@ import VueBus from 'vue-ts-bus'
 Vue.use(VueBus)
 // 在组件内使用
 this.$bus.on('eventName', callback, this)
-
 
 // 2. 自定义挂载到实例上的对象名
 Vue.use(VueBus, { name: 'bus' })
@@ -118,6 +117,43 @@ methods: {
   handleClick() {
     this.$bus.emit('eventName', 1, 2, 3) // [1,2,3]
   }
+},
+// end: B Component
+```
+
+### 同一个事件名注册多个事件
+
+> 注册的事件会按注册先后顺序依次执行
+
+```js
+// start: A Component
+created() {
+  // 注册事件
+  this.$bus.on('eventName', (...args) => console.log('A1 ', args), this)
+  this.$bus.on('eventName', (...args) => console.log('A2 ', args), this)
+
+  setTimeout(() => {
+    this.$bus.emit('eventName', 1, 2)
+    // 会打印输出两次
+    // A1 [1,2]
+    // A2 [1,2]
+  }, 1000)
+},
+// end: A Component
+
+// 在其他组件内注册和触发事件
+// start: B Component
+created() {
+  this.$bus.on('eventName', (...args) => console.log('B1 ', args), this)
+  this.$bus.emit('eventName', 1, 2) // [1,2]
+  
+  setTimeout(() => {
+    this.$bus.emit('eventName', 1, 2)
+    // 如果算上在A组件里面注册的事件 会打印输出三次
+    // A1 [1,2]
+    // A2 [1,2]
+    // B1 [1,2]
+  }, 1000)
 },
 // end: B Component
 ```

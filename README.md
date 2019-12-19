@@ -3,11 +3,13 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zjhcn/vue-ts-bus/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/zjhcn/vue-ts-bus.svg?branch=master)](https://travis-ci.org/zjhcn/vue-ts-bus)
 [![Coveralls](https://img.shields.io/coveralls/zjhcn/vue-ts-bus.svg)](https://coveralls.io/github/zjhcn/vue-ts-bus)
-[![npm](https://img.shields.io/badge/npm-1.0.3-orange.svg)](https://www.npmjs.com/package/vue-ts-bus)
+[![npm](https://img.shields.io/badge/npm-1.0.4-orange.svg)](https://www.npmjs.com/package/vue-ts-bus)
 [![NPM downloads](http://img.shields.io/npm/dm/vue-ts-bus.svg?style=flat-square)](http://www.npmtrends.com/vue-ts-bus)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/zjhcn/vue-ts-bus.svg)](http://isitmaintained.com/project/zjhcn/vue-ts-bus "Percentage of issues still open")
 
-最好用的 `JS|TS` 第三方库脚手架
+
+## :bookmark_tabs: 文档
+[API文档](./doc/api.md)
 
 ## :star: 特性
 
@@ -70,9 +72,6 @@ requirejs(['node_modules/vue-ts-bus/dist/index.aio.js'], function (base) {
 ```html
 <script src="node_modules/vue-ts-bus/dist/index.aio.js"></script>
 ```
-
-## :bookmark_tabs: 文档
-[API文档](./doc/api.md)
 
 ## :kissing_heart: 贡献者指南
 首次运行需要先安装依赖
